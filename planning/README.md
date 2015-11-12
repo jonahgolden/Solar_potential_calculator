@@ -1,0 +1,1 @@
+This directory is for miscellaneous files, notes, objectives, etc. It also contains the notebook, which is for chronological entries throughout the project process including observations, ideas, failures, links, images, tables, etc.
