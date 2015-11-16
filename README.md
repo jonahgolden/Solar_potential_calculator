@@ -1,24 +1,28 @@
-Howe Sound Wind Map
+Solar Calculator
 Jonah Golden, 2015-11-08
 
 10-Minute Plan: This plan is meant to give readers and contributors a general layout of
 the code and documents contained within this project. 
 
-The overarching goal of the code contained within this project is to make a 2-dimensional 
-wind map of Howe Sound, British Columbia.  This map will be used by the wind surfing 
-community and potentially others.
+The overarching goal of the code contained within this project is to make a function that 
+provides solar panel energy generation potential.
+
+First, I will make a function called Solar_Power_Calculator that takes latitude, day of 
+the year, and hour of the day as inputs, and as an output returns the watts per square 
+meter of power that the sun transmits to the earth (without cloud cover) at that given 
+time and place. 
   
-The planning directory contains an original project proposal as well as a notes.txt file
-that should be added to whenever contributors make changes or additions to the project.
+Then, I will make a function called Solar_Energy_Calculator that takes latitude, area of 
+solar panels, and solar panel efficiency as inputs and as an output returns the number of 
+kWh that those panels will generate in a year and a graph that shows the energy 
+production curve of those panels over the year.  Again, this function doesn't take weather
+patterns into account
 
-Necessary steps towards achieving this goal are contained in different scripts, within 
-the src directory.  These include visualizing background information of wind data at Howe 
-Sound, loading a basemap of the region, plotting contour lines over this basemap, and 
-eventually plotting wind vectors and wind barbs.  
-
-The necessary data for running these scripts will be contained within the data directory
-of this project.  This data includes historical wind data for Howe Sound, a map 
-of the region, elevation data of the region, and live wind data for Howe Sound.
+Third, my final goal is to create a function that takes latitude, longitude, installed capacity of 
+solar panels, and the efficiency of those solar panels as inputs.  As outputs, it will 
+return the number of kWh that those panels will generate in a year and a graph that shows 
+the energy production curve of those panels over the year.  This function will take 
+weather patterns into account.
 
 Any plots or tables that come from analysis will be contained in the results directory.
 
