@@ -1,8 +1,10 @@
 # Jonah Golden, 2015-11-18
 # For a solar panel array defined by your inputs, this script returns how much energy it 
 # will generate in a year on average, saves a graph of your average energy generation over 
-# one year, and saves a table of your average energy generation for each month of the year.
-# How to run: python solar_panel_calc.py Latitude Longitude Area Panel_Efficiency Save_Name_Graph Save_Name_Table
+# one year.
+# How to run: python solar_panel_calc.py Latitude Longitude Area Panel_Efficiency
+# Assumptions: There are no buildings, trees, or mountains that block sun at any point during
+# the day
 # Inputs: 1) Latitude must be a number from -90 through 90. Negative latitudes indicate
 #			 southern hemisphere, while positive latitudes indicate northern hemisphere.
 #		  2) Longitude must be a number from -180 through 180. Negative longitudes indicate
@@ -13,7 +15,6 @@
 #			 of the solar panels.  0.16 is standard.
 # Output: 1) Average energy generation for a year in Kilowatt hours (kWh).
 #		  2) Graph of average energy generation over a year, saved in the results directory.
-#		  3) Table of average energy generation for each month.
 
 # Import Libraries
 import sys
