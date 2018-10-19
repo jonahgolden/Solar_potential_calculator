@@ -1,31 +1,39 @@
 Solar Calculator
 Jonah Golden, 2015-11-08
 
-10-Minute Plan: This plan is meant to give readers and contributors a general layout of
-the code and documents contained within this project. 
+10-Minute Plan: This plan is meant to give readers and contributors a general layout of the code and documents contained within this project.
 
-The overarching goal of the code contained within this project is to make a function that 
-provides solar panel energy generation potential.
+The overarching goal is to make a function that provides solar panel energy generation potential for any solar panel array, anywhere on earth.
 
-First, I will make a function called Solar_Power_Calculator that takes latitude, day of 
-the year, and hour of the day as inputs, and as an output returns the watts per square 
-meter of power that the sun transmits to the earth (without cloud cover) at that given 
-time and place. 
-  
-Then, I will make a function called Solar_Energy_Calculator that takes latitude, area of 
-solar panels, and solar panel efficiency as inputs and as an output returns the number of 
-kWh that those panels will generate in a year and a graph that shows the energy 
-production curve of those panels over the year.  Again, this function doesn't take weather
-patterns into account
+The current iteration is the function solar_panel_calc.py which is located in the src folder of this project. This function takes latitude, longitude, area of installed panels (m^2), and the efficiency of those panels as inputs. It returns the calculated energy generation potential over one year and saves a graph of the predicted average energy generation over one year as outputs.
 
-Third, my final goal is to create a function that takes latitude, longitude, installed capacity of 
-solar panels, and the efficiency of those solar panels as inputs.  As outputs, it will 
-return the number of kWh that those panels will generate in a year and a graph that shows 
-the energy production curve of those panels over the year.  This function will take 
-weather patterns into account.
+How to run: python solar_panel_calc.py Latitude Longitude Area Panel_Efficiency
+
+Assumptions: There are no buildings, trees, or mountains that block sun at any point during the day.
+
+Inputs: 1. Latitude must be a number from -90 through 90. Negative latitudes indicate southern hemisphere, while positive latitudes indicate northern hemisphere.
+2. Longitude must be a number from -180 through 180. Negative longitudes indicate
+western hemisphere, while positive longitudes indicate eastern.
+3. Area must be a number.  It is the number of square meters of your solar panel array. One 255 watt panel is about 1.64 square meters.
+4. Panel_Efficiency must be a number between 0 and 1, and indicates the efficiency of the solar panels. 0.16 is currently standard, but some panels have efficiencies of up to 0.3.
+
+Outputs: 1. Average energy generation for a year in Kilowatt hours (kWh).
+2. Graph of average energy generation over a year, saved in the results directory.
+
+Another function located in the src folder of this project is called solar_power_calc.py. It calculates the power (w) the sun is radiating on one square meter of the earth when it is sunny in any location in the world at any time.
+
+How to run: python solar_power_calc.py Day_of_year, Latitude, Hour_of_Day
+
+Assumptions: There is no cloud cover.
+
+Inputs: 1. Day_of_year must be a whole number from 1 through 365.
+2. Latitude must be a number from -90 through 90. Negative latitudes indicate southern hemisphere.
+3. Hour_of_Day must be a number from 0 through 24.
+
+Output: Power in watts
 
 Any plots or tables that come from analysis will be contained in the results directory.
 
-Final manuscripts and the final wind map can be found in the doc directory.
+Final manuscripts can be found in the doc directory.
 
 
