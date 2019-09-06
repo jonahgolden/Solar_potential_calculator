@@ -1,5 +1,5 @@
-Solar Calculator
-Jonah Golden, 2015-11-08
+Solar Potential Calculator
+Jonah Golden, 2018-11-08
 
 10-Minute Plan: This plan is meant to give readers and contributors a general layout of the code and documents contained within this project.
 
