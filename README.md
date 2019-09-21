@@ -4,7 +4,7 @@ Jonah Golden
 A function that provides solar panel energy generation potential for any solar panel array, anywhere on earth.
 
 ### Solar Panel Energy Predictions
-The function solar_panel_calc.py is located in the src folder of this project. This function takes latitude, longitude, area of installed panels (m^2), and the efficiency of those panels as inputs. It returns the calculated energy generation potential over one year and saves a graph of the predicted average energy generation over one year.
+The function solar_panel_calc.py is located in the src folder of this project. This function takes latitude, longitude, area of installed panels, and the efficiency of those panels as inputs. It returns the calculated energy generation potential over one year and saves a graph of the predicted average energy generation over one year.
 
 **How to run:** python solar_panel_calc.py Latitude Longitude Area Panel_Efficiency
 
